@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/emoji.css">
+    <title>NGYP</title>
+</head>
+<body>
+    <div class="container">
+
+        
+        <div class="nav">
+            <div>
+                <h3 class="">NGGYU</h3> 
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"></a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+              <li>  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Video</a></li>
+               <li> <a href="#">Nothing</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="text">
+                
+                
+                <h1>
+                   
+                    NEVER GONNA GIVE YOU UP
+                </h1>
+                
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus exercitationem sapiente ut dolor possimus odio maiores nihil modi porro dicta nulla illo, earum, cupiditate sint, dignissimos laborum sed quis.</p>
+                
+            </div>
+
+
+        </div>
+
+        <video class="bg-video" src="resources/video/video.mp4" autoplay loop muted>
+        
+        </video>
+        <div class="emoji emoji--wow">
+            <div class="emoji__face">
+                <div
+                    class="emoji__eyebrows">
+                </div>
+                <div class="emoji__eyes">
+                </div>
+                <div class="emoji__mouth">
+                </div>
+            </div>
+        </div>
+        <audio src="resources/video/music.mp3" style="position:absolute;visibility:hidden" class="music" ></audio>
+        
+
+
+    </div>
+
+    <script>
+        const btn = document.querySelector(".emoji")
+        const music = document.querySelector(".music")
+
+      
+        i = 2
+        btn.addEventListener('click',()=>{
+            console.log(i)
+            if (i % 2 ==0){
+                music.play()
+                console.log(i)
+            }else{
+                music.pause()
+                console.log(i)
+            }
+            i++;
+        }
+        )
+    </script>
+</body>
+</html>

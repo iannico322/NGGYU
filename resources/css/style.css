@@ -1,0 +1,124 @@
+:root{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body{
+    margin: 0;
+    background-color: black;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+   
+   
+}
+.bg-video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    -webkit-mask-image:-webkit-gradient(linear,right top, left top,  from(rgba(0, 0, 0, 0.517)), to(rgba(255, 17, 17, 0)));
+
+}
+
+
+.nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+   
+}
+.nav div h3{
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(209, 23, 23);
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    width: 20%;
+    justify-content: space-around;
+    gap: 10px;
+       
+   
+}
+.nav ul li a{
+    color: white;
+    cursor: pointer;
+    
+    text-decoration: none;
+}
+.nav ul li a:hover{
+    color: rgb(201, 198, 198);
+    cursor: pointer;
+
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+
+}
+.text{
+    margin-left:20%;
+    width: 30%;
+ 
+
+}
+.text h1{
+    font-size: 3.4rem;
+    opacity: 90%;
+    max-width: 490px;
+}
+.text p{
+    opacity: 80%;
+    width: 80%;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    .text{
+        width: 60%;
+    }
+    .text h1{
+        font-size: 2.3rem;
+        opacity: 90%;
+        max-width: 400px;
+    }
+
+    .nav div h3{
+        font-size: 1.5rem;
+    }
+    .nav ul {
+        display: flex;
+        list-style: none;
+        width: 40%;
+        justify-content: center;
+        gap: 35px;
+        padding: 0;
+       
+       
+    }
+    .nav ul li a{
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+       
+    
+        text-decoration: none;
+    }
+  }
