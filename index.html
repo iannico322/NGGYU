@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="resources/css/style.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/emoji.css">
+    <link rel="stylesheet" href="resources/css/loading.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>NGYP</title>
 </head>
 <body>
+   <div class="loading">
+    <div class="lds-ripple"><div></div><div></div></div>
+   </div>
+
+
+
     <div class="container">
 
         
@@ -66,7 +74,12 @@
         const btn = document.querySelector(".emoji")
         const music = document.querySelector(".music")
 
-      
+        $(window).on('load',function(){
+            $(".loading").fadeOut(2000);
+            
+            $(".container").fadein(1000);
+        })
+
         i = 2
         btn.addEventListener('click',()=>{
             console.log(i)
